@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(void) {
+int a=0,b=1,c,d,n;
+scanf("%d",&n);
+if(n==0)
+printf("0");
+for(int i=0;i<n;i++){
+if(i<=1)
+printf("%d ",i);
+else
+{
+d=a+b;
+a=b;
+b=d;
+printf("%d ",d);
+}
+}
+return 0;
+
+}
+
