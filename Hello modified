@@ -4,7 +4,7 @@ int main()
 {
  char str[20];
  printf("Enter a string");
- scanf("%s",str);
+ scanf("%[^\n]s",str);
  printf("%s",str);
  return 0;
 }
