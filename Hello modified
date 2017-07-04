@@ -4,7 +4,7 @@ int main()
 {
  char str[20];
  printf("Enter a string");
- scanf("%[^\n]s",str);
+ scanf("%[^\n]s",str); //used to read a string with nwhite space 
  printf("%s",str);
  return 0;
 }
