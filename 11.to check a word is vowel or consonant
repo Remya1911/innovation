@@ -1,16 +1,23 @@
 #include <stdio.h>
-
+#include<string.h>
 int main(void) {
-char at;
-scanf("%c",&at);
-	if((at=='a')||(at=='e')||(at=='i')||(at=='o')||(at=='u')||(at=='A')||(at=='E')||(at=='I')||(at=='O')||(at=='U'))
-	{
-		printf("the character %c is vowel",at);
-	}
-	else
-	{
-		printf("the character %c is consonant",at);	
-	}
-	// your code goes here
-	return 0;
+char at[20];
+int i,l,count=0;
+scanf("%s",at);
+l=strlen(at);
+for(i=0;i<l;i++)
+{
+if((at[i]=='a')||(at[i]=='e')||(at[i]=='i')||(at[i]=='o')||(at[i]=='u')||(at[i]=='A')||(at[i]=='E')||(at[i]=='I')||(at[i]=='O')||(at[i]=='U'))
+{
+count++;
+}
+else
+ break;
+}
+if(count==l)
+  printf("The string %s is vowel",at);
+else
+  printf("The string %s isconsonant",at);
+// your code goes here
+return 0;
 }
