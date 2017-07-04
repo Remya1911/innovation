@@ -5,8 +5,10 @@ int num;
 scanf("%d",&num);
 if(num>0)
 	printf("number %d is postiver",num);
-	else
+	else if(num<0)
 		printf("number %d is negative",num);
+		else
+		printf("zero");
 	// your code goes here
 	
 	return 0;
