@@ -6,4 +6,5 @@ C Program to Find ASCII Value of a Character
 C Program to Compute Quotient and Remainder
 C Program to Find the Size of int, float, double and char
 C Program to Demonstrate the Working of Keyword long
-C Program to Swap Two Numbers
+C Program to Swap Two Numbers by using temporary variable
+C Program to Swap Two Numbers without using temporary variable
