@@ -1,9 +1,23 @@
 #include <stdio.h>
-
+#include<string.h>
 int main(void) {
-char i;
-for(i=97;i<=122;i++)
-printf("%c ",i);
-	return 0;
-
+char at[20];
+int i,l,count=0;
+scanf("%s",at);
+l=strlen(at);
+for(i=0;i<l;i++)
+{
+if((at[i]=='a')||(at[i]=='e')||(at[i]=='i')||(at[i]=='o')||(at[i]=='u')||(at[i]=='A')||(at[i]=='E')||(at[i]=='I')||(at[i]=='O')||(at[i]=='U'))
+{
+count++;
+}
+else
+ break;
+}
+if(count==l)
+  printf("The string %s is vowel",at);
+else
+  printf("The string %s is not a vowel",at);
+// your code goes here
+return 0;
 }
